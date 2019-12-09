@@ -8,10 +8,8 @@
     $scope.newVar = "NEELAM";
     $scope.displayNumeric = function(){
       var total = calculateTotal($scope.name);
-      console.log(total);
-
       $scope.displayNumber = total;
-      console.log($scope.displayNumber);
+
     }
 
     function calculateTotal(string){

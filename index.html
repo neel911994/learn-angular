@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app="myFirstApp">
+<html lang="en" dir="ltr" >
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
     <title>Welcome Page</title>
   </head>
-  <body ng-controller="myFirstController">
+  <body ng-app="myFirstApp">
     <h1>Name Calculator</h1>
-    <div >
+    <div ng-controller="myFirstController">
 
           <input type="text" ng-model="name" ng-keyup="displayNumeric();"></input>
+          <div>
+            
+            The Numeric value of the name is : {{displayNumber}}
+          </div>
+
 
     </div>
-    <div>
-      The Numeric value of the name is :
-    </div>
-{{diplayNumber}}
-{{name}}
-{{newVar}}
+
 
   </body>
 </html>
